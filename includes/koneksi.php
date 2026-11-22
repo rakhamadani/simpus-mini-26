@@ -4,8 +4,7 @@ $config = require __DIR__ . '/config.php';
 try {
     $dsn = "pgsql:host={$config['db_host']};
     port={$config['db_port']};
-    dbname={$config['db_name']}
-    sslmode={$sslmode}";
+    dbname={$config['db_name']}";
 
     $pdo = new PDO(
         $dsn,
